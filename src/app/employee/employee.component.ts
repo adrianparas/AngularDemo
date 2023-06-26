@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Employee } from '../employee';
 
 @Component({
   selector: 'app-employee',
@@ -6,9 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent {
+  EmployeeObj: Employee[] = [
+    {empId:10011,empName:'John', dept:'Dev'},
+    {empId:10012,empName:'Rose',dept:'QA'},
+    {empId:10012,empName:'Vijay',dept:'Dev'},
+    {empId:10012,empName:'Vikram',dept:'IT'},
+    {empId:10012,empName:'Ram',dept:'Dev'}
+  ]
   empId = 10001;
   empName = "John";
   dept = "Development";
+  show1: boolean=true;
 
   show() {
     console.log("Employee Id: " + this.empId);

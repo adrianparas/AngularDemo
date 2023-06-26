@@ -5,16 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MobilesComponent } from './mobiles/mobiles.component';
 import { EmployeeComponent } from './employee/employee.component';
-
+import { FormsModule } from '@angular/forms';
+import { DirectiveDemoComponent } from './directive-demo/directive-demo.component';
+import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 @NgModule({
   declarations: [
     AppComponent,
     MobilesComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    DirectiveDemoComponent,
+    PipeDemoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

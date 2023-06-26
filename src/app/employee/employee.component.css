@@ -4,3 +4,16 @@ body {
     background-color: aquamarine;
     text-align: center;
 }
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+table {
+    background-color: aquamarine;
+    color: crimson;
+}
