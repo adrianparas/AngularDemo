@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class PipeDemoComponent {
   presentDate = new Date();
+  price: number = 25000;
 }
